@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ViacomAMP.iml" filepath="$PROJECT_DIR$/ViacomAMP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news_api_service/news_api_service.iml" filepath="$PROJECT_DIR$/news_api_service/news_api_service.iml" />
+      <module fileurl="file://C:\Users\vinay\OneDrive\Android Rep\ViacomAMP\news_api_service\news_api_service.iml" filepath="C:\Users\vinay\OneDrive\Android Rep\ViacomAMP\news_api_service\news_api_service.iml" />
+    </modules>
+  </component>
+</project>
