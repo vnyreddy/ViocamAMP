@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements ProviderInterface
     private MainAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articles;
+    private Provider provider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +36,8 @@ public class MainActivity extends AppCompatActivity implements ProviderInterface
     }
 
     private void getInterface(){
-        Provider provider =new Provider(this);
+        provider =new Provider(this);
         provider.onNewsRequest();
-        provider.onArticleRequest();
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements ProviderInterface
 
     @Override
     public void onSucess() {
-        displayList();
+        provider.onArticleRequest();
     }
 
     @Override
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements ProviderInterface
     public void onArticleResponse(List<Article> articles) {
 
         this.articles = articles;
+        displayList();
     }
 
 

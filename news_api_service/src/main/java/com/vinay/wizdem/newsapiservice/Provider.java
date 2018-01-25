@@ -20,7 +20,7 @@ public class Provider {
     private List<Article> articles;
     ProviderInterface providerInterface;
 
-    public Provider(ProviderInterface providerInterface){
+    public Provider(ProviderInterface providerInterface) {
         this.providerInterface = providerInterface;
     }
 
@@ -35,8 +35,9 @@ public class Provider {
                     newsFeed = response.body();
                     if (newsFeed.getArticles() != null) {
                         articles = newsFeed.getArticles();
+                        providerInterface.onSucess();
                     }
-                }else {
+                } else {
                     providerInterface.onEmptyResoponse();
                 }
             }
